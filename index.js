@@ -1,5 +1,19 @@
 function hasTargetSum(array, target) {
-  // Write your algorithm here
+  // 1 step
+  const seenNumbers = {}
+
+  for (const number of array) {
+    // n steps
+    const complement = target - number 
+    // n steps
+    if (complement in seenNumbers) {
+      // n steps
+      return true 
+    }
+    seenNumbers[number] = true
+  }
+  // 1 step
+  return false
 }
 
 /* 
